@@ -1,10 +1,7 @@
 <template>
   <div class="container">
-      <div class="row sendPay d-flex justify-content-center mt-5 pt-5 mb-5 pb-5">
-          <div data-img="left" class="col-sm-12 mainImg col-md-5 d-flex flex-column justify-content-center">
-              <img :src="imgSendPay" alt="" class="img-fluid">
-          </div>
-          <div class="col-sm-12 col-md-5 d-flex justify-content-center  flex-column">
+      <div class="row container-content d-flex justify-content-center mt-5 mt-2 pt-5 mb-5 pb-5">
+          <div class="col-sm-11 col-md-5 d-flex flex-column justify-content-center">
                 <div class="littleTitle">
                     <p>{{littleTitle}}</p>
                 </div>
@@ -14,9 +11,12 @@
                 <div class="mainParagraph mt-4">
                     <p>{{mainParagraph}}</p>
                 </div>
-                <div class="col-sm-12 mainButton mt-4">
-                  <button @click="redirect">{{valueBtn}}</button>
+                <div class="mainBtn mt-4">
+                    <button @click="redirect">{{mainBtn}}</button>
                 </div>
+          </div>
+          <div data-img="right" class="col-sm-1 col-md-5 d-flex flex-column justify-content-center">
+              <img :src="imgGetPay" alt="" class="img-get-pay img-fluid">
           </div>
       </div>
   </div>
@@ -24,22 +24,21 @@
 
 <script>
 export default {
-    name: 'sendingPayment',
+    name: 'GettingPaid',
 
     props:{
         littleTitle:String,
         mainTitle:String,
         mainParagraph:String,
-        valueBtn:String,
-        redirectBtn:String,
-        imgSendPay:String
+        mainBtn:String,
+        btnRedirect:String,
+        imgGetPay:String
     },
     methods:{
         redirect(){
-            window.location.assign(`${this.redirectBtn}`)
+            window.location.assign(`${this.btnRedirect}`)
         }
     },
-
     mounted(){
         const finance = document.querySelectorAll('[data-img]');
         const animationClass = 'animated';
@@ -63,27 +62,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sendPay{
-    
 
-    .mainImg{
-        img{
-            padding-right: 15%;
-        }
-    }
-
-    .littleTitle{
+.littleTitle{
         p{
             font-weight: 600;
             color: #4DAAF2;
         }
     }
 
-    .mainParagraph{
+.mainParagraph{
         opacity: .4;
     }
 
-    .mainButton{
+.mainBtn{
         button{
             width: 10vw;
             padding: .4rem 1.4rem;
@@ -115,53 +106,55 @@ export default {
         }
     }
 
-    [data-img]{
-        opacity: 0;
-        transition: 1s;
-    }
-    [data-img="left"]{
-        transform: translate3d(50px, 0,0);
-    }
-    [data-img].animated{
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+[data-img]{
+    opacity: 0;
+    transition: 1s;
+}
+[data-img="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+[data-img].animated{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 
-    /*-----------------------------
-            Responsividade
-    -----------------------------*/
-    @media screen and (max-width: 1024px) {
-        .mainButton{
-            button{
-                width: 15vw;
-            }
+/*---------------------------------
+        Responsividade
+---------------------------------*/
+@media screen and (max-width: 1024px){
+    .mainBtn{
+        button{
+            width: 15vw;
         }
     }
+}
 
-    @media screen and (max-width: 768px) {
-        .mainButton{
-            button{
-                width: 20vw;
-            }
+@media screen and (max-width: 768px){
+    .mainBtn{
+        button{
+            width: 20vw;
         }
     }
+}
 
-    @media screen and (max-width: 425px){
-        .mainImg{
-            img{
-                margin-bottom: 20%;
-            }
-        }
-        
-        .mainButton{
+@media screen and (max-width: 425px){
+    .container-content{
+        display: flex;
+        flex-direction: column-reverse;
+
+        .mainBtn{
             display: flex;
             justify-content: center;
             button{
-                width: 50vw;
+                width: 50vw
             }
         }
-        
-        
+        .img-get-pay{
+            margin-bottom: 10vh;
+        }
+    }
+    [data-img="right"]{
+        transform: translate3d(0, 50px, 0);
     }
 }
 </style>

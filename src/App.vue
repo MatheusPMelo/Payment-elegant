@@ -22,6 +22,16 @@
         redirectBtn="https://www.google.com"
         imgSendPay="https://www.elegantthemes.com/preview/Divi/wp-content/uploads/2018/01/finance-illustration-04.png"
       />
+      <GettingPaid
+        littleTitle="Getting Paid"
+        mainTitle="Get Paid Easily & Quickly"
+        mainParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+        mainBtn="Learn More"
+        redirectBtn="https://www.google.com"
+        imgGetPay="https://www.elegantthemes.com/preview/Divi/wp-content/uploads/2018/01/finance-illustration-01.png"
+      />
+      <Resume
+      />
   </div>
 </template>
 
@@ -29,13 +39,18 @@
 import Header from "./components/Header.vue";
 import Finances from "./components/Finances.vue";
 import SendingPayment from "./components/sendingPayment.vue";
+import GettingPaid from "./components/GettingPaid.vue";
+import Resume from "./components/Resume.vue";
 
 export default {
   name: 'App',
   components: {
     Header,
     Finances,
-    SendingPayment
+    SendingPayment,
+    GettingPaid,
+    Resume,
+    Resume
 }
 }
 </script>

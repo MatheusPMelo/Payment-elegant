@@ -22,6 +22,7 @@
         redirectBtn="https://www.google.com"
         imgSendPay="https://www.elegantthemes.com/preview/Divi/wp-content/uploads/2018/01/finance-illustration-04.png"
       />
+
       <GettingPaid
         littleTitle="Getting Paid"
         mainTitle="Get Paid Easily & Quickly"
@@ -30,7 +31,15 @@
         redirectBtn="https://www.google.com"
         imgGetPay="https://www.elegantthemes.com/preview/Divi/wp-content/uploads/2018/01/finance-illustration-01.png"
       />
+
       <Resume
+        imgA="https://www.elegantthemes.com/preview/Divi/wp-content/uploads/2018/01/finance-illustration-02.png"
+        imgB="https://www.elegantthemes.com/preview/Divi/wp-content/uploads/2018/01/finance-illustration-03.png"
+        imgC="https://www.elegantthemes.com/preview/Divi/wp-content/uploads/2018/01/finance-illustration-01.png"
+
+        littleTitleA="teste1"
+        littleTitleB="teste2"
+        littleTitleC="teste3"
       />
   </div>
 </template>
@@ -40,7 +49,6 @@ import Header from "./components/Header.vue";
 import Finances from "./components/Finances.vue";
 import SendingPayment from "./components/sendingPayment.vue";
 import GettingPaid from "./components/GettingPaid.vue";
-import Resume from "./components/Resume.vue";
 
 export default {
   name: 'App',
@@ -48,9 +56,7 @@ export default {
     Header,
     Finances,
     SendingPayment,
-    GettingPaid,
-    Resume,
-    Resume
+    GettingPaid
 }
 }
 </script>

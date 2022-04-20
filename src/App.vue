@@ -56,6 +56,19 @@
         btnRedirectC="https://www.google.com"
       />
   </div>
+  <Form
+    imgWave="https://www.elegantthemes.com/preview/Divi/wp-content/uploads/2018/01/divider2-scaled.jpg"
+
+    titleMain="Signup For a Free Trial Today!"
+    mainText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+
+    listItemA="Lorem ipsum dolor sit amet consectetur adipiscing"
+    listItemB="Lorem ipsum dolor sit amet consectetur adipiscing"
+    listItemC="Lorem ipsum dolor sit amet consectetur adipiscing"
+
+    formTitle="Start Your Trial!"
+    formText="Lorem ipsum dolor sit amet, consectetur adipiscing elit  sed do"
+  />
 </template>
 
 <script>
@@ -64,6 +77,7 @@ import Finances from "./components/Finances.vue";
 import SendingPayment from "./components/sendingPayment.vue";
 import GettingPaid from "./components/GettingPaid.vue";
 import Resume from "./components/Resume.vue";
+import Form from "./components/Form.vue";
 
 export default {
   name: 'App',
@@ -72,7 +86,8 @@ export default {
     Finances,
     SendingPayment,
     GettingPaid,
-    Resume
+    Resume,
+    Form
 }
 }
 </script>

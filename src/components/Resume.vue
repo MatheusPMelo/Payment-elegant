@@ -165,13 +165,13 @@ export default {
 }
 
 [data-animation="up"]{
-  transform: translate3d(0, 100px, 0);
+  transform: translate3d(0, -100px, 0);
 }
 [data-animation="left"]{
-  transform: translate3d(100px, 0, 0);
+  transform: translate3d(0 ,100px, 0);
 }
 [data-animation="right"]{
-  transform: translate3d(-100px, 0, 0);
+  transform: translate3d(0, 100px, 0);
 }
 [data-animation].animated{
   opacity: 1;

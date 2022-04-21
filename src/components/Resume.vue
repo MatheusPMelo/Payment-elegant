@@ -4,7 +4,7 @@
       <div class="content row mt-5">
         
         <!-- Content 1 --->
-        <div data-animation="right" class="col-md-4 container">
+        <div data-animation="right" class="col-md-4 mb-5 container">
           <div class="d-flex flex-column">
             <div class="">
               <div class="imgContent1 d-flex justify-content-center">
@@ -28,7 +28,7 @@
         <!-- End Content 1 -->
 
         <!-- Content 2 --->
-        <div data-animation="up" class="col-md-4 container">
+        <div data-animation="up" class="col-md-4 mb-5 container">
           <div class="d-flex flex-column">
             <div class="">
               <div class="imgContent1 d-flex justify-content-center">
@@ -52,7 +52,7 @@
         <!-- End Content 2 -->
 
         <!-- Content 3 --->
-        <div data-animation="left" class="col-md-4 container">
+        <div data-animation="left" class="col-md-4 mb-5 container">
           <div class="d-flex flex-column">
             <div class="">
               <div class="imgContent1 d-flex justify-content-center">
@@ -178,4 +178,31 @@ export default {
   transform: translate3d(0, 0, 0);
 }
 
+
+/*----------------------------
+    Responsividade
+----------------------------*/
+@media screen and (max-width:1024px) {
+  .mainBtn{
+    button{
+      width: 17vw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .mainBtn{
+    button{
+      width: 20vw;
+    }
+  }
+}
+
+@media screen and (max-width: 425px){
+  .mainBtn{
+    button{
+      width: 40vw;
+    }
+  }
+}
 </style>

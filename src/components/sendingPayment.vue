@@ -120,7 +120,7 @@ export default {
         transition: 1s;
     }
     [data-img="left"]{
-        transform: translate3d(50px, 0,0);
+        transform: translate3d(0, 50px,0);
     }
     [data-img].animated{
         opacity: 1;

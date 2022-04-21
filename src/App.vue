@@ -68,6 +68,7 @@
 
     formTitle="Start Your Trial!"
     formText="Lorem ipsum dolor sit amet, consectetur adipiscing elit  sed do"
+    btnSubmit="Enviar Dados"
   />
 </template>
 

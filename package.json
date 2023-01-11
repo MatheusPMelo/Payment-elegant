@@ -1,7 +1,6 @@
 {
-  "name": "Payment Elegant",
+  "name": "elegant-theme",
   "homepage": "https://matheuspmelo.github.io/Payment-elegant/",
-  "version": "0.1.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

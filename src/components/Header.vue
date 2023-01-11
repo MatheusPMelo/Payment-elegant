@@ -5,7 +5,7 @@
                 <div class="container content-text col-sm-12 col-md-4 d-flex justify-content-center">
                     <h1 class="mb-2">{{titulo}}</h1>
                     <p class="mb-2 mt-2">{{texto}}</p>
-                    <button class="mt-5" @click="redirect()">{{btnValue}}</button>
+                    <button class="mt-5 w-100" @click="redirect()">{{btnValue}}</button>
                 </div>
                 <div class="content-img col-sm-12 col-md-6 d-flex justify-content-start align-items-center">
                     <img class="img-fluid portal-img" :src="srcImg">
